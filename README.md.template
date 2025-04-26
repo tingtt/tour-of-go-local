@@ -1,0 +1,13 @@
+# A Tour of Go (local)
+
+Content copied from [golang/tour](https://github.com/golang/tour).
+
+## Getting Started
+
+1. Download and install Go from [go.dev/doc/install](https://go.dev/doc/install)
+2. Try [tour](lessons)!
+
+    ```sh
+    go run lessons/0.\ welcome/0.\ Hello,\ 世界/hello.go
+    ```
+
