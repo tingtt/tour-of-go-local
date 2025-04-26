@@ -1,7 +1,7 @@
 ## Interface values with nil underlying values
 
-If the concrete value inside the interface itself is nil, the method will be called with a nil receiver.
+インターフェース自体の中にある具体的な値が nil の場合、メソッドは nil をレシーバーとして呼び出されます。
 
-In some languages this would trigger a null pointer exception, but in Go it is common to write methods that gracefully handle being called with a nil receiver (as with the method `M` in this example.)
+いくつかの言語ではこれは null ポインター例外を引き起こしますが、Go では nil をレシーバーとして呼び出されても適切に処理するメソッドを記述するのが一般的です(この例では `M` メソッドのように)。
 
-Note that an interface value that holds a nil concrete value is itself non-nil.
+具体的な値として nil を保持するインターフェイスの値それ自体は非 nil であることに注意してください。

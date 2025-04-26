@@ -1,7 +1,7 @@
 ## Methods continued
 
-You can declare a method on non-struct types, too.
+例で挙げたstructの型だけではなく、任意の型(type)にもメソッドを宣言できます。
 
-In this example we see a numeric type `MyFloat` with an `Abs` method.
+例は、 `Abs` メソッドを持つ、数値型の `MyFloat` 型です。
 
-You can only declare a method with a receiver whose type is defined in the same package as the method. You cannot declare a method with a receiver whose type is defined in another package (which includes the built-in types such as `int`).
+レシーバを伴うメソッドの宣言は、レシーバ型が同じパッケージにある必要があります。 他のパッケージに定義している型に対して、レシーバを伴うメソッドを宣言できません （組み込みの `int` などの型も同様です）。

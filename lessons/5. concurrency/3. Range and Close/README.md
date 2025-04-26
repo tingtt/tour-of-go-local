@@ -1,15 +1,15 @@
 ## Range and Close
 
-A sender can `close` a channel to indicate that no more values will be sent. Receivers can test whether a channel has been closed by assigning a second parameter to the receive expression: after
+送り手は、これ以上の送信する値がないことを示すため、チャネルを `close` できます。 受け手は、受信の式に2つ目のパラメータを割り当てることで、そのチャネルがcloseされているかどうかを確認できます:
 
 ```
 v, ok := <-ch
 ```
 
-`ok` is `false` if there are no more values to receive and the channel is closed.
+受信する値がない、かつ、チャネルが閉じているなら、 `ok` の変数は、 `false` になります。
 
-The loop `for i := range c` receives values from the channel repeatedly until it is closed.
+ループの `for i := range c` は、チャネルが閉じられるまで、チャネルから値を繰り返し受信し続けます。
 
-**Note:** Only the sender should close a channel, never the receiver. Sending on a closed channel will cause a panic.
+**注意:** 送り手のチャネルだけをcloseしてください。受け手はcloseしてはいけません。 もしcloseしたチャネルへ送信すると、パニック( *panic* )します。
 
-**Another note:** Channels aren't like files; you don't usually need to close them. Closing is only necessary when the receiver must be told there are no more values coming, such as to terminate a `range` loop.
+**もう一つ注意:** チャネルは、ファイルとは異なり、通常は、closeする必要はありません。 closeするのは、これ以上値が来ないことを受け手が知る必要があるときにだけです。 例えば、 `range` ループを終了するという場合です。

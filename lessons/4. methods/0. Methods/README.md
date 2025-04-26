@@ -1,9 +1,9 @@
 ## Methods
 
-Go does not have classes. However, you can define methods on types.
+Goには、クラス( *class* )のしくみはありませんが、型にメソッド( *method* )を定義できます。
 
-A method is a function with a special *receiver* argument.
+メソッドは、特別なレシーバ( *receiver* )引数を関数に取ります。
 
-The receiver appears in its own argument list between the `func` keyword and the method name.
+レシーバは、 `func` キーワードとメソッド名の間に自身の引数リストで表現します。
 
-In this example, the `Abs` method has a receiver of type `Vertex` named `v`.
+この例では、 `Abs` メソッドは `v` という名前の `Vertex` 型のレシーバを持つことを意味しています。

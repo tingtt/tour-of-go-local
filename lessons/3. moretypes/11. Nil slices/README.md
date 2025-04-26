@@ -1,5 +1,5 @@
 ## Nil slices
 
-The zero value of a slice is `nil`.
+スライスのゼロ値は `nil` です。
 
-A nil slice has a length and capacity of 0 and has no underlying array.
+`nil` スライスは 0 の長さと容量を持っており、何の元となる配列も持っていません。

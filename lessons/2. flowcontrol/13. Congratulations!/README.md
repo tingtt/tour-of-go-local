@@ -1,5 +1,5 @@
 ## Congratulations!
 
-You finished this lesson!
+この章はこれで終わりです。
 
-You can go back to the list of [modules](/tour/list) to find what to learn next, or continue with the [next lesson](javascript:click%28'.next-page'%29).
+[章のリスト](/list)から学びたいところを見ても良いですし、 [&gt;](javascript:click%28'.next-page'%29) をクリックして次の章へ進みましょう。

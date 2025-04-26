@@ -1,5 +1,5 @@
 ## Exercise: Fibonacci closure
 
-Let's have some fun with functions.
+関数を用いた面白い例を見てみましょう。
 
-Implement a `fibonacci` function that returns a function (a closure) that returns successive [fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) (0, 1, 1, 2, 3, 5, ...).
+`fibonacci` (フィボナッチ)関数を実装しましょう。この関数は、連続する[フィボナッチ数](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%9C%E3%83%8A%E3%83%83%E3%83%81%E6%95%B0)(0, 1, 1, 2, 3, 5, ...)を返す関数(クロージャ)を返します。

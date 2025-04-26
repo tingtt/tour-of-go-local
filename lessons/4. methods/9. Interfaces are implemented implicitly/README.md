@@ -1,5 +1,5 @@
 ## Interfaces are implemented implicitly
 
-A type implements an interface by implementing its methods. There is no explicit declaration of intent, no "implements" keyword.
+型にメソッドを実装していくことによって、インタフェースを実装(満た)します。 インタフェースを実装することを明示的に宣言する必要はありません( "implements" キーワードは必要ありません)。
 
-Implicit interfaces decouple the definition of an interface from its implementation, which could then appear in any package without prearrangement.
+暗黙のインターフェースは、インターフェースの定義をその実装から切り離します。 インターフェースの実装は、事前の取り決めなしにパッケージに現れることがあります。

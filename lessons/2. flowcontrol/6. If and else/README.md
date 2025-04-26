@@ -1,5 +1,5 @@
 ## If and else
 
-Variables declared inside an `if` short statement are also available inside any of the `else` blocks.
+なお、 `if` ステートメントで宣言された変数は、 `else` ブロック内でも使うことができます。
 
-(Both calls to `pow` return their results before the call to `fmt.Println` in `main` begins.)
+(コードの補足: `main` の `fmt.Println` は、2つの `pow` が先に実行されてから実行されます)

@@ -1,23 +1,23 @@
 ## Type assertions
 
-A *type assertion* provides access to an interface value's underlying concrete value.
+*型アサーション* は、インターフェースの値の基になる具体的な値を利用する手段を提供します。
 
 ```
 t := i.(T)
 ```
 
-This statement asserts that the interface value `i` holds the concrete type `T` and assigns the underlying `T` value to the variable `t`.
+この文は、インターフェースの値 `i` が具体的な型 `T` を保持し、基になる `T` の値を変数 `t` に代入することを主張します。
 
-If `i` does not hold a `T`, the statement will trigger a panic.
+`i` が `T` を保持していない場合、この文は panic を引き起こします。
 
-To *test* whether an interface value holds a specific type, a type assertion can return two values: the underlying value and a boolean value that reports whether the assertion succeeded.
+インターフェースの値が特定の型を保持しているかどうかを *テスト* するために、型アサーションは2つの値(基になる値とアサーションが成功したかどうかを報告するブール値)を返すことができます。
 
 ```
 t, ok := i.(T)
 ```
 
-If `i` holds a `T`, then `t` will be the underlying value and `ok` will be true.
+`i` が `T` を保持していれば、 `t` は基になる値になり、 `ok` は真(true)になります。
 
-If not, `ok` will be false and `t` will be the zero value of type `T`, and no panic occurs.
+そうでなければ、 `ok` は偽(false)になり、 `t` は型 `T` のゼロ値になり panic は起きません。
 
-Note the similarity between this syntax and that of reading from a map.
+この構文と map から読み取る構文との類似点に注意してください。

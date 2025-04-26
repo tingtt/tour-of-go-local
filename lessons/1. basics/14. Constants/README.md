@@ -1,7 +1,7 @@
 ## Constants
 
-Constants are declared like variables, but with the `const` keyword.
+定数( *constant* )は、 `const` キーワードを使って変数と同じように宣言します。
 
-Constants can be character, string, boolean, or numeric values.
+定数は、文字(character)、文字列(string)、boolean、数値(numeric)のみで使えます。
 
-Constants cannot be declared using the `:=` syntax.
+なお、定数は `:=` を使って宣言できません。

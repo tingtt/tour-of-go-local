@@ -1,16 +1,16 @@
 ## Slice defaults
 
-When slicing, you may omit the high or low bounds to use their defaults instead.
+スライスするときは、それらの既定値を代わりに使用することで上限または下限を省略することができます。
 
-The default is zero for the low bound and the length of the slice for the high bound.
+既定値は下限が 0 で上限はスライスの長さです。
 
-For the array
+以下の配列において
 
 ```
 var a [10]int
 ```
 
-these slice expressions are equivalent:
+これらのスライス式は等価です:
 
 ```
 a[0:10]

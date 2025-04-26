@@ -1,34 +1,36 @@
 ## Mutating Maps
 
-Insert or update an element in map `m`:
+map `m` の操作を見ていきましょう。
+
+`m` へ要素(elem)の挿入や更新:
 
 ```
 m[key] = elem
 ```
 
-Retrieve an element:
+要素の取得:
 
 ```
 elem = m[key]
 ```
 
-Delete an element:
+要素の削除:
 
 ```
 delete(m, key)
 ```
 
-Test that a key is present with a two-value assignment:
+キーに対する要素が存在するかどうかは、2つの目の値で確認します:
 
 ```
 elem, ok = m[key]
 ```
 
-If `key` is in `m`, `ok` is `true`. If not, `ok` is `false`.
+もし、 `m` に `key` があれば、変数 `ok` は `true` となり、存在しなければ、 `ok` は `false` となります。
 
-If `key` is not in the map, then `elem` is the zero value for the map's element type.
+なお、mapに `key` が存在しない場合、 `elem` はmapの要素の型のゼロ値となります。
 
-**Note:** If `elem` or `ok` have not yet been declared you could use a short declaration form:
+**Note:** もし `elem` や `ok` をまだ宣言していなければ、次のように `:=` で短く宣言できます:
 
 ```
 elem, ok := m[key]

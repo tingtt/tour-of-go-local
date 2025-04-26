@@ -1,5 +1,5 @@
 ## Nil interface values
 
-A nil interface value holds neither value nor concrete type.
+nil インターフェースの値は、値も具体的な型も保持しません。
 
-Calling a method on a nil interface is a run-time error because there is no type inside the interface tuple to indicate which *concrete* method to call.
+呼び出す *具体的な* メソッドを示す型がインターフェースのタプル内に存在しないため、 nil インターフェースのメソッドを呼び出すと、ランタイムエラーになります。

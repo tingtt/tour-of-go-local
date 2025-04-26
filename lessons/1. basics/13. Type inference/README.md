@@ -1,15 +1,15 @@
 ## Type inference
 
-When declaring a variable without specifying an explicit type (either by using the `:=` syntax or `var =` expression syntax), the variable's type is inferred from the value on the right hand side.
+明示的な型を指定せずに変数を宣言する場合( `:=` や `var =` のいずれか)、変数の型は右側の変数から型推論されます。
 
-When the right hand side of the declaration is typed, the new variable is of that same type:
+右側の変数が型を持っている場合、左側の新しい変数は同じ型になります:
 
 ```
 var i int
 j := i // j is an int
 ```
 
-But when the right hand side contains an untyped numeric constant, the new variable may be an `int`, `float64`, or `complex128` depending on the precision of the constant:
+右側に型を指定しない数値である場合、左側の新しい変数は右側の定数の精度に基いて `int`, `float64`, `complex128` の型になります:
 
 ```
 i := 42           // int
@@ -17,4 +17,4 @@ f := 3.142        // float64
 g := 0.867 + 0.5i // complex128
 ```
 
-Try changing the initial value of `v` in the example code and observe how its type is affected.
+例のコードにある変数 `v` の初期値を変えて、型がどのように変化するかを見てみてください。

@@ -1,11 +1,11 @@
 ## Exercise: Images
 
-Remember the [picture generator](/tour/moretypes/18) you wrote earlier? Let's write another one, but this time it will return an implementation of `image.Image` instead of a slice of data.
+前に解いた、 [画像ジェネレーター](/moretypes/18)　を覚えていますか？ 今回は、データのスライスの代わりに `image.Image` インタフェースの実装を返すようにしてみましょう。
 
-Define your own `Image` type, implement [the necessary methods](/pkg/image/#Image), and call `pic.ShowImage`.
+自分の `Image` 型を定義し、 [インタフェースを満たすのに必要なメソッド](https://golang.org/pkg/image/#Image) を実装し、 `pic.ShowImage` を呼び出してみてください。
 
-`Bounds` should return a `image.Rectangle`, like `image.Rect(0, 0, w, h)`.
+`Bounds` は、 `image.Rect(0, 0, w, h)` のようにして `image.Rectangle` を返すようにします。
 
-`ColorModel` should return `color.RGBAModel`.
+`ColorModel` は、 `color.RGBAModel` を返すようにします。
 
-`At` should return a color; the value `v` in the last picture generator corresponds to `color.RGBA{v, v, 255, 255}` in this one.
+`At` は、ひとつの色を返します。 生成する画像の色の値 `v` を `color.RGBA{v, v, 255, 255}` を利用して返すようにします。

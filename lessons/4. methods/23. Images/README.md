@@ -1,6 +1,6 @@
 ## Images
 
-[Package image](/pkg/image/#Image) defines the `Image` interface:
+[`image`](https://golang.org/pkg/image/#Image) パッケージは、以下の `Image` インタフェースを定義しています：
 
 ```
 package image
@@ -12,8 +12,8 @@ type Image interface {
 }
 ```
 
-**Note**: the `Rectangle` return value of the `Bounds` method is actually an [`image.Rectangle`](/pkg/image/#Rectangle), as the declaration is inside package `image`.
+Note: `Bounds` メソッドの戻り値である `Rectangle` は、 `image` パッケージの [`image.Rectangle`](https://golang.org/pkg/image/#Rectangle) に定義があります。
 
-(See [the documentation](/pkg/image/#Image) for all the details.)
+(詳細は、 [このドキュメント](https://golang.org/pkg/image/#Image) を参照してください。)
 
-The `color.Color` and `color.Model` types are also interfaces, but we'll ignore that by using the predefined implementations `color.RGBA` and `color.RGBAModel`. These interfaces and types are specified by the [image/color package](/pkg/image/color/)
+`color.Color` と `color.Model` は共にインタフェースですが、定義済みの `color.RGBA` と `color.RGBAModel` を使うことで、このインタフェースを無視できます。 これらのインタフェースは、[image/color](https://golang.org/pkg/image/color/) パッケージで定義されています。

@@ -1,9 +1,9 @@
 ## Exercise: rot13Reader
 
-A common pattern is an [io.Reader](/pkg/io/#Reader) that wraps another `io.Reader`, modifying the stream in some way.
+よくあるパターンは、別の `io.Reader` をラップし、ストリームの内容を何らかの方法で変換する[io.Reader](https://golang.org/pkg/io/#Reader)です。
 
-For example, the [gzip.NewReader](/pkg/compress/gzip/#NewReader) function takes an `io.Reader` (a stream of compressed data) and returns a `*gzip.Reader` that also implements `io.Reader` (a stream of the decompressed data).
+例えば、 [gzip.NewReader](https://golang.org/pkg/compress/gzip/#NewReader) は、 `io.Reader` (gzipされたデータストリーム)を引数で受け取り、 `*gzip.Reader` を返します。 その `*gzip.Reader` は、 `io.Reader` (展開したデータストリーム)を実装しています。
 
-Implement a `rot13Reader` that implements `io.Reader` and reads from an `io.Reader`, modifying the stream by applying the [rot13](https://en.wikipedia.org/wiki/ROT13) substitution cipher to all alphabetical characters.
+`io.Reader` を実装し、 `io.Reader` で[ROT13](https://ja.wikipedia.org/wiki/ROT13) 換字式暗号( *substitution cipher* )をすべてのアルファベットの文字に適用して読み出すように `rot13Reader` を実装してみてください。
 
-The `rot13Reader` type is provided for you. Make it an `io.Reader` by implementing its `Read` method.
+`rot13Reader` 型は提供済みです。 この `Read` メソッドを実装することで `io.Reader` インタフェースを満たしてください。

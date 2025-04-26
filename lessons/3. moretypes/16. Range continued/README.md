@@ -1,13 +1,13 @@
 ## Range continued
 
-You can skip the index or value by assigning to `_`.
+インデックスや値は、 " `_` "(アンダーバー) へ代入することで捨てることができます。
 
 ```
 for i, _ := range pow
 for _, value := range pow
 ```
 
-If you only want the index, you can omit the second variable.
+もしインデックスだけが必要なのであれば、2つ目の値を省略します。
 
 ```
 for i := range pow

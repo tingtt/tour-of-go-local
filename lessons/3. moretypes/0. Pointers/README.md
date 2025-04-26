@@ -1,27 +1,27 @@
 ## Pointers
 
-Go has pointers. A pointer holds the memory address of a value.
+Goはポインタを扱います。 ポインタは値のメモリアドレスを指します。
 
-The type `*T` is a pointer to a `T` value. Its zero value is `nil`.
+変数 `T` のポインタは、 `*T` 型で、ゼロ値は `nil` です。
 
 ```
 var p *int
 ```
 
-The `&` operator generates a pointer to its operand.
+`&` オペレータは、そのオペランド( *operand* )へのポインタを引き出します。
 
 ```
 i := 42
 p = &i
 ```
 
-The `*` operator denotes the pointer's underlying value.
+`*` オペレータは、ポインタの指す先の変数を示します。
 
 ```
-fmt.Println(*p) // read i through the pointer p
-*p = 21         // set i through the pointer p
+fmt.Println(*p) // ポインタpを通してiから値を読みだす
+*p = 21         // ポインタpを通してiへ値を代入する
 ```
 
-This is known as "dereferencing" or "indirecting".
+これは "dereferencing" または "indirecting" としてよく知られています。
 
-Unlike C, Go has no pointer arithmetic.
+なお、C言語とは異なり、ポインタ演算はありません。

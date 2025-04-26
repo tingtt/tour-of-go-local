@@ -1,5 +1,5 @@
 ## Variables
 
-The `var` statement declares a list of variables; as in function argument lists, the type is last.
+`var` ステートメントは変数( *variable* )を宣言します。 関数の引数リストと同様に、複数の変数の最後に型を書くことで、変数のリストを宣言できます。
 
-A `var` statement can be at package or function level. We see both in this example.
+`var` ステートメントはパッケージ、または、関数で利用できます。例のコードで示します。

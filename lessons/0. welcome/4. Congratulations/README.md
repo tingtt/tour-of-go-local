@@ -1,5 +1,5 @@
 ## Congratulations
 
-You've finished the first module of the tour!
+Go Tour の最初の章が終わりました。
 
-Now click on [A Tour of Go](javascript:highlightAndClick%28".logo"%29) to find out what else you can learn about Go, or go directly to the [next lesson](javascript:click%28'.next-page'%29).
+[A Tour of Go をクリック](javascript:highlightAndClick%28".logo"%29)して学びたいところを見ても良いですし、 直接 [&gt;](javascript:click%28'.next-page'%29) をクリックして次の章へ進みましょう。

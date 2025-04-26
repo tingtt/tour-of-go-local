@@ -1,3 +1,3 @@
 ## For is Go's "while"
 
-At that point you can drop the semicolons: C's `while` is spelled `for` in Go.
+セミコロン(;)を省略することもできます。つまり、C言語などにある `while` は、Goでは `for` だけを使います。

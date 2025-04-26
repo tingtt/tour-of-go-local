@@ -1,3 +1,3 @@
 ## Structs
 
-A `struct` is a collection of fields.
+`struct` (構造体)は、フィールド( *field* )の集まりです。

@@ -1,11 +1,11 @@
 ## Exported names
 
-In Go, a name is exported if it begins with a capital letter. For example, `Pizza` is an exported name, as is `Pi`, which is exported from the `math` package.
+Goでは、最初の文字が大文字で始まる名前は、外部のパッケージから参照できるエクスポート（公開）された名前( *exported name* )です。 例えば、 `Pi` は `math` パッケージでエクスポートされています。
 
-`pizza` and `pi` do not start with a capital letter, so they are not exported.
+小文字ではじまる `pi` や `hoge` などはエクスポートされていない名前です。
 
-When importing a package, you can refer only to its exported names. Any "unexported" names are not accessible from outside the package.
+パッケージをインポートすると、そのパッケージがエクスポートしている名前を参照することができます。 エクスポートされていない名前(小文字ではじまる名前)は、外部のパッケージからアクセスすることはできません。
 
-Run the code. Notice the error message.
+コードを実行し、エラーを確認してみましょう。
 
-To fix the error, rename `math.pi` to `math.Pi` and try it again.
+エラーを修正するために、 `math.pi` を `math.Pi` に書き換え、もう一度実行してみてください。

@@ -1,5 +1,5 @@
 ## Methods are functions
 
-Remember: a method is just a function with a receiver argument.
+メソッドは、レシーバ引数を伴う関数、でしたね？
 
-Here's `Abs` written as a regular function with no change in functionality.
+この `Abs` は、先ほどの例から機能を変えずに通常の関数として記述しています。

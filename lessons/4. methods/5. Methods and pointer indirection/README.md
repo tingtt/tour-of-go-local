@@ -1,6 +1,6 @@
 ## Methods and pointer indirection
 
-Comparing the previous two programs, you might notice that functions with a pointer argument must take a pointer:
+下の2つの呼び出しを比べると、ポインタを引数に取る `ScaleFunc` 関数は、ポインタを渡す必要があることに気がつくでしょう:
 
 ```
 var v Vertex
@@ -8,7 +8,7 @@ ScaleFunc(v, 5)  // Compile error!
 ScaleFunc(&v, 5) // OK
 ```
 
-while methods with pointer receivers take either a value or a pointer as the receiver when they are called:
+メソッドがポインタレシーバである場合、呼び出し時に、変数、または、ポインタのいずれかのレシーバとして取ることができます:
 
 ```
 var v Vertex
@@ -17,4 +17,4 @@ p := &v
 p.Scale(10) // OK
 ```
 
-For the statement `v.Scale(5)`, even though `v` is a value and not a pointer, the method with the pointer receiver is called automatically. That is, as a convenience, Go interprets the statement `v.Scale(5)` as `(&v).Scale(5)` since the `Scale` method has a pointer receiver.
+`v.Scale(5)` のステートメントでは、 `v` は変数であり、ポインタではありません。 メソッドでポインタレシーバが自動的に呼びだされます。 `Scale` メソッドはポインタレシーバを持つ場合、Goは利便性のため、 `v.Scale(5)` のステートメントを `(&v).Scale(5)` として解釈します。

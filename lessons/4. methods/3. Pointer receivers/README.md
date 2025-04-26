@@ -1,13 +1,13 @@
 ## Pointer receivers
 
-You can declare methods with pointer receivers.
+ポインタレシーバでメソッドを宣言できます。
 
-This means the receiver type has the literal syntax `*T` for some type `T`. (Also, `T` cannot itself be a pointer such as `*int`.)
+これはレシーバの型が、ある型 `T` への構文 `*T` があることを意味します。 （なお、 `T` は `*int` のようなポインタ自身を取ることはできません）
 
-For example, the `Scale` method here is defined on `*Vertex`.
+例では `*Vertex` に `Scale` メソッドが定義されています。
 
-Methods with pointer receivers can modify the value to which the receiver points (as `Scale` does here). Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+ポインタレシーバを持つメソッド(ここでは `Scale` )は、レシーバが指す変数を変更できます。 レシーバ自身を更新することが多いため、変数レシーバよりもポインタレシーバの方が一般的です。
 
-Try removing the `*` from the declaration of the `Scale` function on line 16 and observe how the program's behavior changes.
+`Scale` の宣言(line 16)から `*` を消し、プログラムの振る舞いがどう変わるのかを確認してみましょう。
 
-With a value receiver, the `Scale` method operates on a copy of the original `Vertex` value. (This is the same behavior as for any other function argument.) The `Scale` method must have a pointer receiver to change the `Vertex` value declared in the `main` function.
+変数レシーバでは、 `Scale` メソッドの操作は元の `Vertex` 変数のコピーを操作します。 （これは関数の引数としての振るまいと同じです）。 つまり `main` 関数で宣言した `Vertex` 変数を変更するためには、`Scale` メソッドはポインタレシーバにする必要があるのです。

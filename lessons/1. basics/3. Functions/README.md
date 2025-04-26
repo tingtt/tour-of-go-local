@@ -1,9 +1,9 @@
 ## Functions
 
-A function can take zero or more arguments.
+関数は、0個以上の引数を取ることができます。
 
-In this example, `add` takes two parameters of type `int`.
+この例では、 `add` 関数は、 `int` 型の２つのパラメータを取ります。
 
-Notice that the type comes *after* the variable name.
+変数名の **後ろ** に型名を書くことに注意してください。
 
-(For more about why types look the way they do, see the [article on Go's declaration syntax](/blog/gos-declaration-syntax).)
+(型をなぜこのように宣言するのか、についての詳細な情報は、 [記事「Go's declaration syntax」](https://blog.golang.org/gos-declaration-syntax) を参照してください。)

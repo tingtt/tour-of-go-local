@@ -1,3 +1,3 @@
 # Methods and interfaces
 
-This lesson covers methods and interfaces, the constructs that define objects and their behavior.
+このレッスンではメソッドとインターフェース、オブジェクトとその動作を定義する構造体について説明します。

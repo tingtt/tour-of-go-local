@@ -1,7 +1,7 @@
 ## Pointers and functions
 
-Here we see the `Abs` and `Scale` methods rewritten as functions.
+ここで、 `Abs` と `Scale` メソッドは関数として書きなおしてあります。
 
-Again, try removing the `*` from line 16. Can you see why the behavior changes? What else did you need to change for the example to compile?
+再度、line 16から `*` を消してください。 なぜ振る舞いが変わったのかわかりますか？ コンパイルするために、さらに何が必要でしょうか。
 
-(If you're not sure, continue to the next page.)
+(よくわからなくても、次のページに行きましょう)

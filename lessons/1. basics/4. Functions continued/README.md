@@ -1,15 +1,17 @@
 ## Functions continued
 
-When two or more consecutive named function parameters share a type, you can omit the type from all but the last.
+関数の２つ以上の引数が同じ型である場合には、最後の型を残して省略して記述できます。
 
-In this example, we shortened
+この例では、
 
 ```
 x int, y int
 ```
 
-to
+を
 
 ```
 x, y int
 ```
+
+へ省略できます。

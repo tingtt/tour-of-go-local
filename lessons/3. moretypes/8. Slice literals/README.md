@@ -1,14 +1,14 @@
 ## Slice literals
 
-A slice literal is like an array literal without the length.
+スライスのリテラルは長さのない配列リテラルのようなものです。
 
-This is an array literal:
+これは配列リテラルです:
 
 ```
 [3]bool{true, true, false}
 ```
 
-And this creates the same array as above, then builds a slice that references it:
+そして、これは上記と同様の配列を作成し、それを参照するスライスを作成します:
 
 ```
 []bool{true, true, false}

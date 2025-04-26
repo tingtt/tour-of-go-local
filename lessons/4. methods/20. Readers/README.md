@@ -1,15 +1,15 @@
 ## Readers
 
-The `io` package specifies the `io.Reader` interface, which represents the read end of a stream of data.
+`io` パッケージは、データストリームを読むことを表現する `io.Reader` インタフェースを規定しています。
 
-The Go standard library contains [many implementations](https://cs.opensource.google/search?q=Read%5C%28%5Cw%2B%5Cs%5C%5B%5C%5Dbyte%5C%29&ss=go%2Fgo) of this interface, including files, network connections, compressors, ciphers, and others.
+Goの標準ライブラリには、ファイル、ネットワーク接続、圧縮、暗号化などで、このインタフェースの [多くの実装](https://golang.org/search?q=Read#Global) があります。
 
-The `io.Reader` interface has a `Read` method:
+`io.Reader` インタフェースは `Read` メソッドを持ちます:
 
 ```
 func (T) Read(b []byte) (n int, err error)
 ```
 
-`Read` populates the given byte slice with data and returns the number of bytes populated and an error value. It returns an `io.EOF` error when the stream ends.
+`Read` は、データを与えられたバイトスライスへ入れ、入れたバイトのサイズとエラーの値を返します。 ストリームの終端は、 `io.EOF` のエラーで返します。
 
-The example code creates a [`strings.Reader`](/pkg/strings/#Reader) and consumes its output 8 bytes at a time.
+例のコードは、 [`strings.Reader`](//golang.org/pkg/strings/#Reader) を作成し、 8 byte毎に読み出しています。

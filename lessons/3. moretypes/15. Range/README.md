@@ -1,5 +1,5 @@
 ## Range
 
-The `range` form of the `for` loop iterates over a slice or map.
+`for` ループに利用する `range` は、スライスや、マップ( `map` )をひとつずつ反復処理するために使います。
 
-When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
+スライスをrangeで繰り返す場合、rangeは反復毎に2つの変数を返します。 1つ目の変数はインデックス( *index* )で、2つ目はインデックスの場所の要素のコピーです。

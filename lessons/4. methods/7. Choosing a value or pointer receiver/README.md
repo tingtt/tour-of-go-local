@@ -1,11 +1,11 @@
 ## Choosing a value or pointer receiver
 
-There are two reasons to use a pointer receiver.
+ポインタレシーバを使う2つの理由があります。
 
-The first is so that the method can modify the value that its receiver points to.
+ひとつは、メソッドがレシーバが指す先の変数を変更するためです。
 
-The second is to avoid copying the value on each method call. This can be more efficient if the receiver is a large struct, for example.
+ふたつに、メソッドの呼び出し毎に変数のコピーを避けるためです。 例えば、レシーバが大きな構造体である場合に効率的です。
 
-In this example, both `Scale` and `Abs` are methods with receiver type `*Vertex`, even though the `Abs` method needn't modify its receiver.
+例では、 `Abs` メソッドはレシーバ自身を変更する必要はありませんが、 `Scale` と `Abs` は両方とも `*Vertex` 型のレシーバです。
 
-In general, all methods on a given type should have either value or pointer receivers, but not a mixture of both. (We'll see why over the next few pages.)
+一般的には、値レシーバ、または、ポインタレシーバのどちらかですべてのメソッドを与え、混在させるべきではありません。 (この理由は数ページ後にわかります)

@@ -1,11 +1,11 @@
 ## Slice length and capacity
 
-A slice has both a *length* and a *capacity*.
+スライスは長さ( *length* )と容量( *capacity* )の両方を持っています。
 
-The length of a slice is the number of elements it contains.
+スライスの長さは、それに含まれる要素の数です。
 
-The capacity of a slice is the number of elements in the underlying array, counting from the first element in the slice.
+スライスの容量は、スライスの最初の要素から数えて、元となる配列の要素数です。
 
-The length and capacity of a slice `s` can be obtained using the expressions `len(s)` and `cap(s)`.
+スライス `s` の長さと容量は `len(s)` と `cap(s)` という式を使用して得ることができます。
 
-You can extend a slice's length by re-slicing it, provided it has sufficient capacity. Try changing one of the slice operations in the example program to extend it beyond its capacity and see what happens.
+十分な容量を持って提供されているスライスを再スライスすることによって、スライスの長さを伸ばすことができます。 その容量を超えて伸ばしたときに何が起こるかを見るため、プログラム例でのスライスのいずれかの操作を変更してみてください。

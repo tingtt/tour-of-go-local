@@ -1,3 +1,5 @@
 ## If
 
-Go's `if` statements are like its `for` loops; the expression need not be surrounded by parentheses `( )` but the braces `{ }` are required.
+Go言語の `if` ステートメントは、先ほどの `for` ループと同様に、括弧 `( )` は不要で、中括弧 `{ }` は必要です。
+
+(もうおなじみですね！)

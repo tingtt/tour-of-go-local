@@ -1,21 +1,20 @@
 ## Channels
 
-Channels are a typed conduit through which you can send and receive values with the channel operator, `<-`.
+チャネル( *Channel* )型は、チャネルオペレータの `<-` を用いて値の送受信ができる通り道です。
 
 ```
-ch <- v    // Send v to channel ch.
-v := <-ch  // Receive from ch, and
-           // assign value to v.
+ch <- v    // v をチャネル ch へ送信する
+v := <-ch  // ch から受信した変数を v へ割り当てる
 ```
 
-(The data flows in the direction of the arrow.)
+(データは、矢印の方向に流れます)
 
-Like maps and slices, channels must be created before use:
+マップとスライスのように、チャネルは使う前に以下のように生成します:
 
 ```
 ch := make(chan int)
 ```
 
-By default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables.
+通常、片方が準備できるまで送受信はブロックされます。これにより、明確なロックや条件変数がなくても、goroutineの同期を可能にします。
 
-The example code sums the numbers in a slice, distributing the work between two goroutines. Once both goroutines have completed their computation, it calculates the final result.
+サンプルコードは、スライス内の数値を合算し、2つのgoroutine間で作業を分配します。 両方のgoroutineで計算が完了すると、最終結果が計算されます。

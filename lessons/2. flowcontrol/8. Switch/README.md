@@ -1,5 +1,5 @@
 ## Switch
 
-A `switch` statement is a shorter way to write a sequence of `if - else` statements. It runs the first case whose value is equal to the condition expression.
+`switch` ステートメントは `if - else` ステートメントのシーケンスを短く書く方法です。
 
-Go's switch is like the one in C, C++, Java, JavaScript, and PHP, except that Go only runs the selected case, not all the cases that follow. In effect, the `break` statement that is needed at the end of each case in those languages is provided automatically in Go. Another important difference is that Go's switch cases need not be constants, and the values involved need not be integers.
+Go の switch は C や C++、Java、JavaScript、PHP の switch と似ていますが、 Go では選択された case だけを実行してそれに続く全ての case は実行されません。 これらの言語の各 case の最後に必要な `break` ステートメントが Go では自動的に提供されます。 もう一つの重要な違いは Go の switch の case は定数である必要はなく、 関係する値は整数である必要はないということです。

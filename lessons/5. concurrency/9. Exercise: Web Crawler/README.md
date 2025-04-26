@@ -1,7 +1,9 @@
 ## Exercise: Web Crawler
 
-In this exercise you'll use Go's concurrency features to parallelize a web crawler.
+この演習では、ウェブクローラ( *web crawler* )を並列化するため、Goの並行性の特徴を使います。
 
-Modify the `Crawl` function to fetch URLs in parallel without fetching the same URL twice.
+同じURLを2度取ってくることなく並列してURLを取ってくるように、 `Crawl` 関数を修正してみてください(注1)。
 
-*Hint*: you can keep a cache of the URLs that have been fetched on a map, but maps alone are not safe for concurrent use!
+**補足**: 工夫すれば `Crawl` 関数のみの修正で実装できますが、無理に `Crawl` 関数内部に収める必要はありません。
+
+**ひとこと**: mapにフェッチしたURLのキャッシュを保持できますが、mapだけでは並行実行時の安全性はありません!

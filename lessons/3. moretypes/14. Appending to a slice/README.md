@@ -1,15 +1,15 @@
 ## Appending to a slice
 
-It is common to append new elements to a slice, and so Go provides a built-in `append` function. The [documentation](/pkg/builtin/#append) of the built-in package describes `append`.
+スライスへ新しい要素を追加するには、Goの組み込みの `append` を使います。 `append` についての詳細は [documentation](https://golang.org/pkg/builtin/#append) を参照してみてください。
 
 ```
 func append(s []T, vs ...T) []T
 ```
 
-The first parameter `s` of `append` is a slice of type `T`, and the rest are `T` values to append to the slice.
+上の定義を見てみましょう。 `append` への最初のパラメータ `s` は、追加元となる `T` 型のスライスです。 残りの `vs` は、追加する `T` 型の変数群です。
 
-The resulting value of `append` is a slice containing all the elements of the original slice plus the provided values.
+`append` の戻り値は、追加元のスライスと追加する変数群を合わせたスライスとなります。
 
-If the backing array of `s` is too small to fit all the given values a bigger array will be allocated. The returned slice will point to the newly allocated array.
+もし、元の配列 `s` が、変数群を追加する際に容量が小さい場合は、より大きいサイズの配列を割り当て直します。 その場合、戻り値となるスライスは、新しい割当先を示すようになります。
 
-(To learn more about slices, read the [Slices: usage and internals](/blog/go-slices-usage-and-internals) article.)
+(スライスについてより詳しく学ぶには、[Slices: usage and internals](https://blog.golang.org/go-slices-usage-and-internals)を読んでみてください)

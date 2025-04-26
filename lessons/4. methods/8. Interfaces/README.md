@@ -1,7 +1,7 @@
 ## Interfaces
 
-An *interface type* is defined as a set of method signatures.
+interface(インタフェース)型は、メソッドのシグニチャの集まりで定義します。
 
-A value of interface type can hold any value that implements those methods.
+そのメソッドの集まりを実装した値を、interface型の変数へ持たせることができます。
 
-**Note:** There is an error in the example code on line 22. `Vertex` (the value type) doesn't implement `Abser` because the `Abs` method is defined only on `*Vertex` (the pointer type).
+**注意:** この例は、22行目でエラーになります。 `Abs` メソッドが、 `Vertex` ではなく `*Vertex` の定義であり、 `Vertex` が `Abser` インタフェースを実装していないということになるためエラーとなります。

@@ -1,3 +1,3 @@
 ## For continued
 
-The init and post statements are optional.
+初期化と後処理ステートメントの記述は任意です。

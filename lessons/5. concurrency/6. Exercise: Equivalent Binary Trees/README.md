@@ -1,12 +1,14 @@
 ## Exercise: Equivalent Binary Trees
 
-There can be many different binary trees with the same sequence of values stored in it. For example, here are two binary trees storing the sequence 1, 1, 2, 3, 5, 8, 13.
+同じ数列を保持するような、形の異なる[二分木( *binary tree* )](https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%9C%A8)は多く存在し得ます。 例えば、ここに数列 1, 1, 2, 3, 5, 8, 13 を保持する2つの二分木があります。
 
-![](/tour/static/img/tree.png)
+![](/content/img/tree.png)
 
-A function to check whether two binary trees store the same sequence is quite complex in most languages. We'll use Go's concurrency and channels to write a simple solution.
+2つの二分木が同じ数列を保持しているかどうかを確認する機能は、多くの言語においてかなり複雑です。
 
-This example uses the `tree` package, which defines the type:
+シンプルな解決方法を記述するために、Goの並行性( *concurrency* )とチャネルを利用してみます。
+
+例では、型を以下のように定義している `tree` パッケージを利用します:
 
 ```
 type Tree struct {
@@ -16,4 +18,4 @@ type Tree struct {
 }
 ```
 
-Continue description on [next page](javascript:click%28'.next-page'%29).
+[続く...](javascript:click%28'.next-page'%29)

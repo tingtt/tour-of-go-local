@@ -1,3 +1,3 @@
 # Welcome!
 
-Learn how to use this tour: including how to navigate the different lessons and how to run code.
+この Tour の使い方を学びましょう: さまざまなレッスンを切り替える方法やコードの実行方法が含まれます。

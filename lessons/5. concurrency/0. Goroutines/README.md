@@ -1,17 +1,17 @@
 ## Goroutines
 
-A *goroutine* is a lightweight thread managed by the Go runtime.
+**goroutine** (ゴルーチン)は、Goのランタイムに管理される軽量なスレッドです。
 
 ```
 go f(x, y, z)
 ```
 
-starts a new goroutine running
+と書けば、新しいgoroutineが実行されます。
 
 ```
 f(x, y, z)
 ```
 
-The evaluation of `f`, `x`, `y`, and `z` happens in the current goroutine and the execution of `f` happens in the new goroutine.
+`f` , `x` , `y` , `z` の評価は、実行元(current)のgoroutineで実行され、 `f` の実行は、新しいgoroutineで実行されます。
 
-Goroutines run in the same address space, so access to shared memory must be synchronized. The [`sync`](/pkg/sync/) package provides useful primitives, although you won't need them much in Go as there are other primitives. (See the next slide.)
+goroutineは、同じアドレス空間で実行されるため、共有メモリへのアクセスは必ず同期する必要があります。 [`sync`](https://golang.org/pkg/sync/) パッケージは同期する際に役に立つ方法を提供していますが、別の方法があるためそれほど必要ありません。 (次のスライドで説明します)

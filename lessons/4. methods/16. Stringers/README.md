@@ -1,6 +1,6 @@
 ## Stringers
 
-One of the most ubiquitous interfaces is [`Stringer`](/pkg/fmt/#Stringer) defined by the [`fmt`](/pkg/fmt/) package.
+もっともよく使われているinterfaceの一つに [`fmt` パッケージ](//golang.org/pkg/fmt/) に定義されている [`Stringer`](//golang.org/pkg/fmt/#Stringer) があります:
 
 ```
 type Stringer interface {
@@ -8,4 +8,4 @@ type Stringer interface {
 }
 ```
 
-A `Stringer` is a type that can describe itself as a string. The `fmt` package (and many others) look for this interface to print values.
+`Stringer` インタフェースは、stringとして表現することができる型です。 `fmt` パッケージ(と、多くのパッケージ)では、変数を文字列で出力するためにこのインタフェースがあることを確認します。

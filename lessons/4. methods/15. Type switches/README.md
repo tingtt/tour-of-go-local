@@ -1,8 +1,8 @@
 ## Type switches
 
-A *type switch* is a construct that permits several type assertions in series.
+*型switch* はいくつかの型アサーションを直列に使用できる構造です。
 
-A type switch is like a regular switch statement, but the cases in a type switch specify types (not values), and those values are compared against the type of the value held by the given interface value.
+型switchは通常のswitch文と似ていますが、型switchのcaseは型(値ではない)を指定し、それらの値は指定されたインターフェースの値が保持する値の型と比較されます。
 
 ```
 switch v := i.(type) {
@@ -15,6 +15,6 @@ default:
 }
 ```
 
-The declaration in a type switch has the same syntax as a type assertion `i.(T)`, but the specific type `T` is replaced with the keyword `type`.
+型switchの宣言は、型アサーション `i.(T)` と同じ構文を持ちますが、特定の型 `T` はキーワード `type` に置き換えられます。
 
-This switch statement tests whether the interface value `i` holds a value of type `T` or `S`. In each of the `T` and `S` cases, the variable `v` will be of type `T` or `S` respectively and hold the value held by `i`. In the default case (where there is no match), the variable `v` is of the same interface type and value as `i`.
+このswitch文は、インターフェースの値 `i` が 型 `T` または `S` の値を保持するかどうかをテストします。 `T` および `S` の各caseにおいて、変数 `v` はそれぞれ 型 `T` または `S` であり、 `i` によって保持される値を保持します。 defaultの場合(一致するものがない場合)、変数 `v` は同じインターフェース型で値は `i` となります。

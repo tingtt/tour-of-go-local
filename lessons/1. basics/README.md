@@ -1,3 +1,3 @@
 # Packages, variables, and functions.
 
-Learn the basic components of any Go program.
+Go プログラムの基本的なコンポーネントを学びます。

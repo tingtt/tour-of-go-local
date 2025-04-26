@@ -1,6 +1,6 @@
 ## Basic types
 
-Go's basic types are
+Go言語の基本型(組み込み型)は次のとおりです:
 
 ```
 bool
@@ -10,16 +10,18 @@ string
 int  int8  int16  int32  int64
 uint uint8 uint16 uint32 uint64 uintptr
 
-byte // alias for uint8
+byte // uint8 の別名
 
-rune // alias for int32
-     // represents a Unicode code point
+rune // int32 の別名
+     // Unicode のコードポイントを表す
 
 float32 float64
 
 complex64 complex128
 ```
 
-The example shows variables of several types, and also that variable declarations may be "factored" into blocks, as with import statements.
+(訳注：runeとは古代文字を表す言葉(runes)ですが、Goでは文字そのものを表すためにruneという言葉を使います。)
 
-The `int`, `uint`, and `uintptr` types are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems. When you need an integer value you should use `int` unless you have a specific reason to use a sized or unsigned integer type.
+例では、いくつかの型の変数を示しています。また、変数宣言は、インポートステートメントと同様に、まとめて( *factored* )宣言可能です。
+
+`int`, `uint`, `uintptr` 型は、32-bitのシステムでは32 bitで、64-bitのシステムでは64 bitです。 サイズ、符号なし( *unsigned* )整数の型を使うための特別な理由がない限り、整数の変数が必要な場合は `int` を使うようにしましょう。

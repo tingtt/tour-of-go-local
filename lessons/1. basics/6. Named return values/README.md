@@ -1,9 +1,9 @@
 ## Named return values
 
-Go's return values may be named. If so, they are treated as variables defined at the top of the function.
+Goでの戻り値となる変数に名前をつける( *named return value* )ことができます。戻り値に名前をつけると、関数の最初で定義した変数名として扱われます。
 
-These names should be used to document the meaning of the return values.
+この戻り値の名前は、戻り値の意味を示す名前とすることで、関数のドキュメントとして表現するようにしましょう。
 
-A `return` statement without arguments returns the named return values. This is known as a "naked" return.
+名前をつけた戻り値の変数を使うと、 `return` ステートメントに何も書かずに戻すことができます。これを "naked" return と呼びます。
 
-Naked return statements should be used only in short functions, as with the example shown here. They can harm readability in longer functions.
+例のコードのように、naked returnステートメントは、短い関数でのみ利用すべきです。長い関数で使うと読みやすさ( *readability* )に悪影響があります。

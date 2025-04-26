@@ -1,5 +1,5 @@
 ## Select
 
-The `select` statement lets a goroutine wait on multiple communication operations.
+`select` ステートメントは、goroutineを複数の通信操作で待たせます。
 
-A `select` blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready.
+`select` は、複数ある `case` のいずれかが準備できるようになるまでブロックし、準備ができた `case` を実行します。 もし、複数の `case` の準備ができている場合、 `case` はランダムに選択されます。

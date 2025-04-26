@@ -1,27 +1,31 @@
 ## Hello, 世界
 
-Welcome to a tour of the [Go programming language](/).
+[プログラミング言語Go](https://golang.org/) Tour ( **Go言語基礎文法最速マスター** ) へようこそ！
 
-The tour is divided into a list of modules that you can access by clicking on [A Tour of Go](javascript:highlight%28".logo"%29) on the top left of the page.
+Go Tour は複数の章で構成されています。 [左上の A Tour of Go から辿ることができます。](javascript:highlight%28".logo"%29)
 
-You can also view the table of contents at any time by clicking on the [menu](javascript:highlightAndClick%28".nav"%29) on the top right of the page.
+また、目次は [右上の menu をクリックすることでいつでも参照できます。](javascript:highlightAndClick%28".nav"%29)
 
-Throughout the tour you will find a series of slides and exercises for you to complete.
+Go Tour は、一連のスライドと演習課題(Exercise)で構成されています。
 
-You can navigate through them using
+ページを切り替えるには:
 
-- ["previous"](javascript:highlight%28".prev-page"%29) or `PageUp` to go to the previous page,
+- [下の&lt;](javascript:highlight%28".prev-page"%29) または `PageUp` で前のページ
 
 <!--THE END-->
 
-- ["next"](javascript:highlight%28".next-page"%29) or `PageDown` to go to the next page.
+- [下の&gt;](javascript:highlight%28".next-page"%29) または `PageDown` で次のページ
 
-The tour is interactive. Click the [Run](javascript:highlightAndClick%28"#run%22%29) button now (or press `Shift` + `Enter`) to compile and run the program on a remote server. The result is displayed below the code.
+で移動できます。
 
-These example programs demonstrate different aspects of Go. The programs in the tour are meant to be starting points for your own experimentation.
+Go Tour はインタラクティブです。 [Runボタンをクリック](javascript:highlightAndClick%28"#run%22%29)(もしくは `Shift` + `Enter`) すると、コードが リモートのサーバ でコンパイルされ、実行されます。 実行結果はコードの下に表示されます。
 
-Edit the program and run it again.
+これらのコードは、Go言語の様々な特徴を示しています。 Go Tour にあるプログラムは、Goを学習するための出発点となることでしょう。
 
-When you click on [Format](javascript:highlightAndClick%28"#format%22%29) (shortcut: `Ctrl` + `Enter`), the text in the editor is formatted using the [gofmt](/cmd/gofmt/) tool. You can switch syntax highlighting on and off by clicking on the [syntax](javascript:highlightAndClick%28".syntax-checkbox"%29) button.
+さっそくコードを修正し、実行してみましょう。
 
-When you're ready to move on, click the [right arrow](javascript:highlightAndClick%28".next-page"%29) below or type the `PageDown` key.
+[Formatボタンをクリック](javascript:highlightAndClick%28"#format%22%29)、または `Ctrl` + `Enter` でコードをフォーマット(整形)します。 これは [gofmt](https://golang.org/cmd/gofmt/) コマンドを利用しています。 Goのコードを書く際は、必ずこのツールを一緒に使いましょう。 [syntaxボタンをクリック](javascript:highlightAndClick%28".syntax-checkbox"%29)するとシンタックスハイライトの切り替えができます。
+
+準備ができたら、次のページへ進みましょう！
+
+注：本サイト "A Tour of Go" は、 [A Tour of Go](https://tour.golang.org) を日本語訳したものです。日本語翻訳プロジェクトは[こちら](https://github.com/atotto/go-tour-jp)です。

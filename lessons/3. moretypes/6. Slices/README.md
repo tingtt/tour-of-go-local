@@ -1,18 +1,18 @@
 ## Slices
 
-An array has a fixed size. A slice, on the other hand, is a dynamically-sized, flexible view into the elements of an array. In practice, slices are much more common than arrays.
+配列は固定長です。一方で、スライスは可変長です。より柔軟な配列と見なすこともできます。 実際には、スライスは配列よりもより一般的です。
 
-The type `[]T` is a slice with elements of type `T`.
+型 `[]T` は 型 `T` のスライスを表します。
 
-A slice is formed by specifying two indices, a low and high bound, separated by a colon:
+コロンで区切られた二つのインデックス low と high の境界を指定することによってスライスが形成されます:
 
 ```
 a[low : high]
 ```
 
-This selects a half-open range which includes the first element, but excludes the last one.
+これは最初の要素は含むが、最後の要素は除いた半開区間を選択します。
 
-The following expression creates a slice which includes elements 1 through 3 of `a`:
+次の式は a の要素の内 1 から 3 を含むスライスを作ります。
 
 ```
 a[1:4]

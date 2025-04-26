@@ -1,3 +1,3 @@
 ## Map literals continued
 
-If the top-level type is just a type name, you can omit it from the elements of the literal.
+もし、mapに渡すトップレベルの型が単純な型名である場合は、リテラルの要素から推定できますので、その型名を省略することができます。

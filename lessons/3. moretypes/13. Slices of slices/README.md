@@ -1,3 +1,3 @@
 ## Slices of slices
 
-Slices can contain any type, including other slices.
+スライスは、他のスライスを含む任意の型を含むことができます。

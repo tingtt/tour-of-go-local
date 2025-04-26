@@ -1,5 +1,7 @@
 ## Exercise: Maps
 
-Implement `WordCount`. It should return a map of the counts of each “word” in the string `s`. The `wc.Test` function runs a test suite against the provided function and prints success or failure.
+`WordCount` 関数を実装してみましょう。string `s` で渡される文章の、各単語の出現回数のmapを返す必要があります。 `wc.Test` 関数は、引数に渡した関数に対しテストスイートを実行し、成功か失敗かを結果に表示します。
 
-You might find [strings.Fields](/pkg/strings/#Fields) helpful.
+[strings.Fields](https://golang.org/pkg/strings/#Fields) で、何かヒントを得ることができるはずです。
+
+Note: このテストスイートで何を入力とし、何を期待しているかについては、[golang.org/x/tour/wc](https://github.com/golang/tour/blob/master/wc/wc.go)を見てみてください。

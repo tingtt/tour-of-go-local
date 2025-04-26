@@ -1,24 +1,24 @@
 ## Exercise: Loops and Functions
 
-As a way to play with functions and loops, let's implement a square root function: given a number x, we want to find the number z for which z² is most nearly x.
+関数とループを使った簡単な練習として、平方根の計算を実装してみましょう: 数値 x が与えられたときに z² が最も x に近い数値 z を求めたいと思います。
 
-Computers typically compute the square root of x using a loop. Starting with some guess z, we can adjust z based on how close z² is to x, producing a better guess:
+コンピュータは通常ループを使って x の平方根を計算します。 いくつかの z を推測することから始めて、z² がどれほど x に近づいているかに応じて z を調整できます。
 
 ```
 z -= (z*z - x) / (2*z)
 ```
 
-Repeating this adjustment makes the guess better and better until we reach an answer that is as close to the actual square root as can be.
+実際の平方根に近い答えになるまでこの調整を繰り返すことによって、推測はより良いものなります。
 
-Implement this in the `func Sqrt` provided. A decent starting guess for z is 1, no matter what the input. To begin with, repeat the calculation 10 times and print each z along the way. See how close you get to the answer for various values of x (1, 2, 3, ...) and how quickly the guess improves.
+これを `func Sqrt` に実装してください。 何が入力されても z の適切な開始推測値は 1 です。 まず計算を 10 回繰り返してそれぞれの z を表示します。 x (1, 2, 3, ...) のさまざまな値に対する答えがどれほど近似し、 推測が速くなるかを確認してください。
 
-Hint: To declare and initialize a floating point value, give it floating point syntax or use a conversion:
+Hint: 浮動小数点の変数を初期化して宣言するには、型でキャストするか、浮動小数点を使ってみてください:
 
 ```
 z := 1.0
 z := float64(1)
 ```
 
-Next, change the loop condition to stop once the value has stopped changing (or only changes by a very small amount). See if that's more or fewer than 10 iterations. Try other initial guesses for z, like x, or x/2. How close are your function's results to the [math.Sqrt](/pkg/math/#Sqrt) in the standard library?
+次に値が変化しなくなった (もしくはごくわずかな変化しかしなくなった) 場合にループを停止させます。 それが 10 回よりも多いか少ないかを確認してください。 x や x/2 のように他の初期推測の値を z に与えてみてください。 あなたの関数の結果は標準ライブラリの [math.Sqrt](https://golang.org/pkg/math/#Sqrt) にどれくらい近づきましたか？
 
-(**Note:** If you are interested in the details of the algorithm, the z² − x above is how far away z² is from where it needs to be (x), and the division by 2z is the derivative of z², to scale how much we adjust z by how quickly z² is changing. This general approach is called [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method). It works well for many functions but especially well for square root.)
+(メモ: アルゴリズムの詳細について興味がある人のために説明すると、 上の z² − xという式は、z² が最終的な期待値 x からどのくらい離れているかを表しています。 除算の 2z は z² の導関数で、z² の変化の大きさに応じて z の調整値を変化させます。 この一般的なアプローチは[ニュートン法](https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E6%B3%95)と呼ばれています。 多くの関数で有効ですが、平方根で特に有効です。)

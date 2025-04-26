@@ -1,5 +1,5 @@
 ## Defer
 
-A defer statement defers the execution of a function until the surrounding function returns.
+`defer` ステートメントは、 `defer` へ渡した関数の実行を、呼び出し元の関数の終わり(returnする)まで遅延させるものです。
 
-The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+`defer` へ渡した関数の引数は、すぐに評価されますが、その関数自体は呼び出し元の関数がreturnするまで実行されません。

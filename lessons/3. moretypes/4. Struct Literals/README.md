@@ -1,7 +1,7 @@
 ## Struct Literals
 
-A struct literal denotes a newly allocated struct value by listing the values of its fields.
+structリテラルは、フィールドの値を列挙することで新しいstructの初期値の割り当てを示しています。
 
-You can list just a subset of fields by using the `Name:` syntax. (And the order of named fields is irrelevant.)
+`Name:` 構文を使って、フィールドの一部だけを列挙することができます(この方法でのフィールドの指定順序は関係ありません)。 例では `X: 1` として `X` だけを初期化しています。
 
-The special prefix `&` returns a pointer to the struct value.
+`&` を頭に付けると、新しく割り当てられたstructへのポインタを戻します。

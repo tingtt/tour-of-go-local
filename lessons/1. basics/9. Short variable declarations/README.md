@@ -1,5 +1,5 @@
 ## Short variable declarations
 
-Inside a function, the `:=` short assignment statement can be used in place of a `var` declaration with implicit type.
+関数の中では、 `var` 宣言の代わりに、短い `:=` の代入文を使い、暗黙的な型宣言ができます。
 
-Outside a function, every statement begins with a keyword (`var`, `func`, and so on) and so the `:=` construct is not available.
+なお、関数の外では、キーワードではじまる宣言( `var`, `func`, など)が必要で、 `:=` での暗黙的な宣言は利用できません。

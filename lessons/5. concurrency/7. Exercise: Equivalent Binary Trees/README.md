@@ -1,23 +1,23 @@
 ## Exercise: Equivalent Binary Trees
 
-**1.** Implement the `Walk` function.
+**1.** `Walk` 関数を実装してください。
 
-**2.** Test the `Walk` function.
+**2.** `Walk` 関数をテストしてください。
 
-The function `tree.New(k)` constructs a randomly-structured (but always sorted) binary tree holding the values `k`, `2k`, `3k`, ..., `10k`.
+関数 `tree.New(k)` は、値( `k`, `2k`, `3k`, ..., `10k` )をもつ、ランダムに構造化 (しかし常にソートされています) した二分木を生成します。
 
-Create a new channel `ch` and kick off the walker:
+新しいチャネル `ch` を生成し、 `Walk` を動かしましょう:
 
 ```
 go Walk(tree.New(1), ch)
 ```
 
-Then read and print 10 values from the channel. It should be the numbers 1, 2, 3, ..., 10.
+そして、そのチャネルから値を読み出し、10個の値を表示してください。 それは、 1, 2, 3, ..., 10 という表示になるでしょう。
 
-**3.** Implement the `Same` function using `Walk` to determine whether `t1` and `t2` store the same values.
+**3.** `Same` 関数を実装してください。 `t1` と `t2` が同じ値を保存しているどうかを判断するため、 `Walk` を使ってください。
 
-**4.** Test the `Same` function.
+**4.** `Same` 関数をテストしてください。
 
-`Same(tree.New(1), tree.New(1))` should return true, and `Same(tree.New(1), tree.New(2))` should return false.
+`Same(tree.New(1), tree.New(1))` は、 `true` を返すように、 `Same(tree.New(1), tree.New(2))` は、 `false` を返すようにします。
 
-The documentation for `Tree` can be found [here](https://godoc.org/golang.org/x/tour/tree#Tree).
+`Tree` のドキュメントは [こちら](https://godoc.org/golang.org/x/tour/tree#Tree) です。

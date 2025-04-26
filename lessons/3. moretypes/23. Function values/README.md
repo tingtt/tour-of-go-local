@@ -1,5 +1,5 @@
 ## Function values
 
-Functions are values too. They can be passed around just like other values.
+関数も変数です。他の変数のように関数を渡すことができます。
 
-Function values may be used as function arguments and return values.
+関数値( *function value* )は、関数の引数に取ることもできますし、戻り値としても利用できます。

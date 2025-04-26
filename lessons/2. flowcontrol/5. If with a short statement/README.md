@@ -1,7 +1,7 @@
 ## If with a short statement
 
-Like `for`, the `if` statement can start with a short statement to execute before the condition.
+`if` ステートメントは、 `for` のように、条件の前に、評価するための簡単なステートメントを書くことができます。
 
-Variables declared by the statement are only in scope until the end of the `if`.
+ここで宣言された変数は、 `if` のスコープ内だけで有効です。
 
-(Try using `v` in the last `return` statement.)
+(ためしに最後の `return` 文で、 `v` を使ってみてください。 スコープの外なので使えないですよね？)

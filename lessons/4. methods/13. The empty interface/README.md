@@ -1,11 +1,11 @@
 ## The empty interface
 
-The interface type that specifies zero methods is known as the *empty interface*:
+ゼロ個のメソッドを指定されたインターフェース型は、 *空のインターフェース* と呼ばれます:
 
 ```
 interface{}
 ```
 
-An empty interface may hold values of any type. (Every type implements at least zero methods.)
+空のインターフェースは、任意の型の値を保持できます。 (全ての型は、少なくともゼロ個のメソッドを実装しています。)
 
-Empty interfaces are used by code that handles values of unknown type. For example, `fmt.Print` takes any number of arguments of type `interface{}`.
+空のインターフェースは、未知の型の値を扱うコードで使用されます。 例えば、 `fmt.Print` は `interface{}` 型の任意の数の引数を受け取ります。

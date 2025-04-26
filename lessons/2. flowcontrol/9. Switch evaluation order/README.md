@@ -1,8 +1,8 @@
 ## Switch evaluation order
 
-Switch cases evaluate cases from top to bottom, stopping when a case succeeds.
+switch caseは、上から下へcaseを評価します。 caseの条件が一致すれば、そこで停止(自動的にbreak)します。
 
-(For example,
+(例えば、
 
 ```
 switch i {
@@ -11,6 +11,6 @@ case f():
 }
 ```
 
-does not call `f` if `i==0`.)
+では、 `i==0` であれば、 `case 0` でbreakされるため `f` は呼び出されません)
 
-**Note:** Time in the Go playground always appears to start at 2009-11-10 23:00:00 UTC, a value whose significance is left as an exercise for the reader.
+Note: Go playground上の時間は、いつも "2009-11-10 23:00:00 UTC" です。 この値の意味は、読者の楽しみのために残しておきます(^^)

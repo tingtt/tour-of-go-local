@@ -1,5 +1,5 @@
 ## Multiple results
 
-A function can return any number of results.
+関数は複数の戻り値を返すことができます。
 
-The `swap` function returns two strings.
+この `swap` 関数は2つの string を返します。 とても簡単に交換できますね！

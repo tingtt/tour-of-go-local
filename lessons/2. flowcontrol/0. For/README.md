@@ -1,15 +1,13 @@
 ## For
 
-Go has only one looping construct, the `for` loop.
+基本的に、 `for` ループはセミコロン `;` で3つの部分に分かれています:
 
-The basic `for` loop has three components separated by semicolons:
+- 初期化ステートメント: 最初のイテレーション(繰り返し)の前に初期化が実行されます
+- 条件式: イテレーション毎に評価されます
+- 後処理ステートメント: イテレーション毎の最後に実行されます
 
-- the init statement: executed before the first iteration
-- the condition expression: evaluated before every iteration
-- the post statement: executed at the end of every iteration
+初期化ステートメントは、短い変数宣言によく利用します。その変数は `for` ステートメントのスコープ内でのみ有効です。
 
-The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the `for` statement.
+ループは、条件式の評価が `false` となった場合にイテレーションを停止します。
 
-The loop will stop iterating once the boolean condition evaluates to `false`.
-
-**Note:** Unlike other languages like C, Java, or JavaScript there are no parentheses surrounding the three components of the `for` statement and the braces `{ }` are always required.
+*Note*: 他の言語、C言語 や Java、JavaScriptの `for` ループとは異なり、 `for` ステートメントの3つの部分を括る括弧 `( )` はありません。なお、中括弧 `{ }` は常に必要です。

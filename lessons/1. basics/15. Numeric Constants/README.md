@@ -1,9 +1,9 @@
 ## Numeric Constants
 
-Numeric constants are high-precision *values*.
+数値の定数は、高精度な **値** ( *values* )です。
 
-An untyped constant takes the type needed by its context.
+型のない定数は、その状況によって必要な型を取ることになります。
 
-Try printing `needInt(Big)` too.
+例で `needInt(Big)` も出力してみてください。
 
-(An `int` can store at maximum a 64-bit integer, and sometimes less.)
+( `int` は最大64-bitの整数を保持できますが、環境によっては精度が低いこともあります)

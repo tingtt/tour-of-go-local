@@ -1,9 +1,9 @@
 ## Zero values
 
-Variables declared without an explicit initial value are given their *zero value*.
+変数に初期値を与えずに宣言すると、ゼロ値( *zero value* )が与えられます。
 
-The zero value is:
+ゼロ値は型によって以下のように与えられます:
 
-- `0` for numeric types,
-- `false` for the boolean type, and
-- `""` (the empty string) for strings.
+- 数値型(int,floatなど): `0`
+- bool型: `false`
+- string型: `""` (空文字列( *empty string* ))

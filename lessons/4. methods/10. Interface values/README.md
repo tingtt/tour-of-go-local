@@ -1,11 +1,11 @@
 ## Interface values
 
-Under the hood, interface values can be thought of as a tuple of a value and a concrete type:
+下記のように、インターフェースの値は、値と具体的な型のタプルのように考えることができます:
 
 ```
 (value, type)
 ```
 
-An interface value holds a value of a specific underlying concrete type.
+インターフェースの値は、特定の基底になる具体的な型の値を保持します。
 
-Calling a method on an interface value executes the method of the same name on its underlying type.
+インターフェースの値のメソッドを呼び出すと、その基底型の同じ名前のメソッドが実行されます。

@@ -1,7 +1,7 @@
 ## Maps
 
-A map maps keys to values.
+`map` はキーと値とを関連付けます(マップします)。
 
-The zero value of a map is `nil`. A `nil` map has no keys, nor can keys be added.
+マップのゼロ値は `nil` です。 `nil` マップはキーを持っておらず、またキーを追加することもできません。
 
-The `make` function returns a map of the given type, initialized and ready for use.
+`make` 関数は指定された型のマップを初期化して、使用可能な状態で返します。

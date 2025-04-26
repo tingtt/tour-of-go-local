@@ -1,5 +1,5 @@
 ## Function closures
 
-Go functions may be closures. A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is "bound" to the variables.
+Goの関数は [クロージャ( *closure* )](https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B8%E3%83%A3) です。 クロージャは、それ自身の外部から変数を参照する関数値です。 この関数は、参照された変数へアクセスして変えることができ、その意味では、その関数は変数へ"バインド"( *bind* )されています。
 
-For example, the `adder` function returns a closure. Each closure is bound to its own `sum` variable.
+例えば、 `adder` 関数はクロージャを返しています。 各クロージャは、それ自身の `sum` 変数へバインドされます。

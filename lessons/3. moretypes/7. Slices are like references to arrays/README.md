@@ -1,7 +1,9 @@
 ## Slices are like references to arrays
 
-A slice does not store any data, it just describes a section of an underlying array.
+スライスは配列への参照のようなものです。
 
-Changing the elements of a slice modifies the corresponding elements of its underlying array.
+スライスはどんなデータも格納しておらず、単に元の配列の部分列を指し示しています。
 
-Other slices that share the same underlying array will see those changes.
+スライスの要素を変更すると、その元となる配列の対応する要素が変更されます。
+
+同じ元となる配列を共有している他のスライスは、それらの変更が反映されます。

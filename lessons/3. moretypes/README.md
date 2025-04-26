@@ -1,3 +1,3 @@
 # More types: structs, slices, and maps.
 
-Learn how to define types based on existing ones: this lesson covers structs, arrays, slices, and maps.
+既存の型に基づいて新しい型を定義する方法を学ぶ: このレッスンでは構造体、配列、slice、map について説明します。

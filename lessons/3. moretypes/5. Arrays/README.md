@@ -1,13 +1,11 @@
 ## Arrays
 
-The type `[n]T` is an array of `n` values of type `T`.
+`[n]T` 型は、型 `T` の `n` 個の変数の配列( *array* )を表します。
 
-The expression
+以下は、intの10個の配列を宣言しています:
 
 ```
 var a [10]int
 ```
 
-declares a variable `a` as an array of ten integers.
-
-An array's length is part of its type, so arrays cannot be resized. This seems limiting, but don't worry; Go provides a convenient way of working with arrays.
+配列の長さは、型の一部分です。ですので、配列のサイズを変えることはできません。 これは制約のように思えますが、心配しないでください。 Goは配列を扱うための便利な方法を提供しています。

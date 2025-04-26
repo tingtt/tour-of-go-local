@@ -1,6 +1,6 @@
 # A Tour of Go (local)
 
-Content copied from [golang/tour](https://github.com/golang/tour).
+Content copied from [atotto/go-tour-jp](https://github.com/atotto/go-tour-jp).
 
 ## Getting Started
 

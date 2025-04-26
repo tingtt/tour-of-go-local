@@ -1,8 +1,8 @@
 ## Default Selection
 
-The `default` case in a `select` is run if no other case is ready.
+どの `case` も準備ができていないのであれば、 `select` の中の `default` が実行されます。
 
-Use a `default` case to try a send or receive without blocking:
+ブロックせずに送受信するなら、 `default` の `case` を使ってください:
 
 ```
 select {

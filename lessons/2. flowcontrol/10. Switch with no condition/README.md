@@ -1,5 +1,5 @@
 ## Switch with no condition
 
-Switch without a condition is the same as `switch true`.
+条件のないswitchは、 `switch true` と書くことと同じです。
 
-This construct can be a clean way to write long if-then-else chains.
+このswitchの構造は、長くなりがちな "if-then-else" のつながりをシンプルに表現できます。
